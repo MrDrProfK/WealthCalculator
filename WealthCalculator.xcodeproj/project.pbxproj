@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84516FF91F271118003F14AB /* Wealth Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Wealth Calculator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84516FF91F271118003F14AB /* WealthCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WealthCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		84516FFC1F271118003F14AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		84516FF01F271118003F14AB = {
 			isa = PBXGroup;
 			children = (
-				84516FFB1F271118003F14AB /* Wealth Calculator */,
+				84516FFB1F271118003F14AB /* src */,
 				84516FFA1F271118003F14AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		84516FFA1F271118003F14AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84516FF91F271118003F14AB /* Wealth Calculator */,
+				84516FF91F271118003F14AB /* WealthCalculator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84516FFB1F271118003F14AB /* Wealth Calculator */ = {
+		84516FFB1F271118003F14AB /* src */ = {
 			isa = PBXGroup;
 			children = (
 				84516FFC1F271118003F14AB /* main.cpp */,
 			);
-			path = "Wealth Calculator";
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84516FF81F271118003F14AB /* Wealth Calculator */ = {
+		84516FF81F271118003F14AB /* WealthCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 845170001F271118003F14AB /* Build configuration list for PBXNativeTarget "Wealth Calculator" */;
+			buildConfigurationList = 845170001F271118003F14AB /* Build configuration list for PBXNativeTarget "WealthCalculator" */;
 			buildPhases = (
 				84516FF51F271118003F14AB /* Sources */,
 				84516FF61F271118003F14AB /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "Wealth Calculator";
+			name = WealthCalculator;
 			productName = "Wealth Calculator";
-			productReference = 84516FF91F271118003F14AB /* Wealth Calculator */;
+			productReference = 84516FF91F271118003F14AB /* WealthCalculator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -88,7 +88,7 @@
 		84516FF11F271118003F14AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = ComputerDynamo;
 				TargetAttributes = {
 					84516FF81F271118003F14AB = {
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84516FF41F271118003F14AB /* Build configuration list for PBXProject "Wealth Calculator" */;
+			buildConfigurationList = 84516FF41F271118003F14AB /* Build configuration list for PBXProject "WealthCalculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84516FF81F271118003F14AB /* Wealth Calculator */,
+				84516FF81F271118003F14AB /* WealthCalculator */,
 			);
 		};
 /* End PBXProject section */
@@ -133,19 +133,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -173,13 +185,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -187,6 +209,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -216,7 +239,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84516FF41F271118003F14AB /* Build configuration list for PBXProject "Wealth Calculator" */ = {
+		84516FF41F271118003F14AB /* Build configuration list for PBXProject "WealthCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84516FFE1F271118003F14AB /* Debug */,
@@ -225,13 +248,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		845170001F271118003F14AB /* Build configuration list for PBXNativeTarget "Wealth Calculator" */ = {
+		845170001F271118003F14AB /* Build configuration list for PBXNativeTarget "WealthCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				845170011F271118003F14AB /* Debug */,
 				845170021F271118003F14AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
